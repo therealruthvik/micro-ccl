@@ -1,0 +1,8 @@
+build/
+*.o
+*.obj
+compile_commands.json
+.cache/
+.vscode/
+.idea/
+*.csv
