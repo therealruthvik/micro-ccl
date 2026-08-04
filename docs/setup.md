@@ -17,6 +17,11 @@ sudo apt update
 sudo apt install -y build-essential cmake git \
     libibverbs-dev librdmacm-dev rdma-core ibverbs-utils \
     perftest net-tools catch2
+
+# Optional: only needed for the benchmark harness's OpenMPI comparison
+# mode (bench_mpi_allreduce). The core library and its own benchmark
+# binary (bench_allreduce) build fine without this.
+sudo apt install -y libopenmpi-dev openmpi-bin
 ```
 
 ## Bring up rdma_rxe (run on both VMs)
