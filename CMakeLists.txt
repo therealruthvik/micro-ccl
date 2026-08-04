@@ -31,5 +31,7 @@ enable_testing()
 
 include_directories(include)
 
-# src/, bench/, test/ subdirectories are added here as each stage lands.
-# Stage 1 is skeleton only -- nothing to build yet.
+add_subdirectory(src/verbs)
+add_subdirectory(src/bootstrap)
+add_subdirectory(src/transport)
+add_subdirectory(examples)
