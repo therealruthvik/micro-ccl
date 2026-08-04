@@ -16,7 +16,7 @@ each able to reach the other's IP.
 sudo apt update
 sudo apt install -y build-essential cmake git \
     libibverbs-dev librdmacm-dev rdma-core ibverbs-utils \
-    perftest net-tools
+    perftest net-tools catch2
 ```
 
 ## Bring up rdma_rxe (run on both VMs)
